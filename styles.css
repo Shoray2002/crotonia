@@ -100,31 +100,7 @@ li span {
 
 
 
-a{
-  color:white;
-}
 
-
-@keyframes rightanime {
-  50% {
-    transform: translateX(10px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(10px);
-    opacity: 0;
-  }
-}
-@keyframes leftanime {
-  50% {
-    transform: translateX(-10px);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-}
 
 
 
