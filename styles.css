@@ -36,7 +36,7 @@ body {
   color: rgb(253, 236, 204);
   margin: 0 auto;
   text-align: center;
-  border-radius: 30px;
+  /* border-radius: 30px; */
   /* margin-bottom: 100vh; */
 }
 
@@ -64,15 +64,7 @@ li span {
   font-size: 4.5rem;
 }
 
-.emoji {
-  display: none;
-  padding: 1rem;
-}
 
-.emoji span {
-  font-size: 4rem;
-  padding: 0 0.5rem;
-}
 
 @media all and (max-width: 768px) {
   h1 {
@@ -87,6 +79,13 @@ li span {
   li span {
     font-size: 3.375rem;
   }
+.container{  margin-top:5vh}
+
+  #headline {
+  
+  font-size: 55px;
+  /* font-family: 'Mate SC', Arial, sans-serif; */
+}
 }
 
 
