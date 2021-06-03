@@ -80,7 +80,9 @@ li span {
     margin-top: 10vh;
     margin-bottom: 10vh;
   }
-
+  .navbar {
+    height: 5vh;
+  }
   #headline {
     font-size: 55px;
     /* font-family: 'Mate SC', Arial, sans-serif; */
