@@ -16,12 +16,7 @@
   font-size: 1.5em !important;
   width: 125px;
   height: 50px;
-  transition: background-position-x 0.9s linear;
-  text-align: center;
-
-  
-  
-
+  /* text-align: center; */
 }
 
 html,
@@ -51,7 +46,8 @@ body {
 h1 {
   font-weight: normal;
   letter-spacing: 0.125rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+  text-align: center;
 }
 #headline {
   font-size: 80px;
