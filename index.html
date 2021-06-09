@@ -23,11 +23,13 @@
     />
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
       .navigator {
         /* margin: 10px; */
         border: 1px solid white;
+        /* display: flex; */
         /* border-radius: 20px; */
       }
       body {
@@ -89,7 +91,17 @@
     </div>
 
     <div class="container">
-      <h1 id="headline">COMING SOON</h1>
+      <h1 id="headline">
+        <span
+          class="typer"
+          id="main"
+          data-words="Coming Soon,Real Soon,Please stand by"
+          data-delay="200"
+          data-deleteDelay="1000"
+          data-colors="wheat"
+        ></span>
+        <span class="cursor" data-cursorDisplay="_" data-owner="main"></span>
+      </h1>
       <div id="countdown">
         <ul>
           <li><span id="days"></span>days</li>
@@ -107,12 +119,20 @@
         <h4>Connect with us at</h4>
         <ul class="list-unstyled list-inline">
           <li class="list-inline-item">
-            <a href="https://www.facebook.com/crotonia" class="sbtn btn-large mx-1" title="Facebook">
+            <a
+              href="https://www.facebook.com/crotonia"
+              class="sbtn btn-large mx-1"
+              title="Facebook"
+            >
               <ion-icon name="logo-facebook" style="color: #4267b2"></ion-icon>
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.instagram.com/crotonia_iiitl/" class="sbtn btn-large mx-1" title="Instagram">
+            <a
+              href="https://www.instagram.com/crotonia_iiitl/"
+              class="sbtn btn-large mx-1"
+              title="Instagram"
+            >
               <ion-icon name="logo-instagram" style="color: #2867b2"></ion-icon>
             </a>
           </li>
@@ -122,7 +142,11 @@
             </a>
           </li> -->
           <li class="list-inline-item">
-            <a href="https://www.youtube.com/c/CROTONIAIIITLucknow" class="sbtn btn-large mx-1" title="Youtube">
+            <a
+              href="https://www.youtube.com/c/CROTONIAIIITLucknow"
+              class="sbtn btn-large mx-1"
+              title="Youtube"
+            >
               <ion-icon name="logo-youtube" style="color: #ff0000"></ion-icon>
             </a>
           </li>
