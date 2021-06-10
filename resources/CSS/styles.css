@@ -47,6 +47,7 @@ body {
   background-color: black !important;
   display: flex;
   padding-top: 5vh;
+   background:url(/resources/images/4.png)
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
 }
@@ -58,6 +59,7 @@ body {
   text-align: center;
   /* border-radius: 30px; */
   /* margin-bottom: 100vh; */
+ 
 }
 
 h1 {
@@ -114,4 +116,12 @@ li span {
     font-size: 55px;
     /* font-family: 'Mate SC', Arial, sans-serif; */
   }
+}
+
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background:grey;
 }

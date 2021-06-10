@@ -1,0 +1,26 @@
+:root {
+  font-size: 16px;
+  font-family: "Mate SC", Arial, sans-serif;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin-top: 5rem;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: black;
+}
+body::-webkit-scrollbar-thumb {
+  background:grey;
+}
