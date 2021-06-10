@@ -1,11 +1,13 @@
-
+.main{overflow-x: hidden;}
 .ch-grid {
 	margin: 20px 0 0 0;
-	padding: 0;
+	padding-bottom: 7vh;
 	list-style: none;
 	display: block;
 	text-align: center;
-	width: 100%;
+	width: 100%;overflow-x: hidden;
+  overflow-y:hidden ;
+
 }
 
 .ch-grid:after,
@@ -33,6 +35,8 @@
 	position: relative;
 	cursor: default;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  /* padding-right: 0; */
+  
 }
 
 .ch-thumb {
@@ -76,17 +80,17 @@
 }
 
 .ch-img-1 { 
-	background-image: url(../1.jpg);
+	background-image: url(../vinamr.jpg);
 	z-index: 12;
 }
 
 .ch-img-2 { 
-	background-image: url(../2.jpg);
+	background-image: url(../niharika.jpg);
 	z-index: 11;
 }
 
 .ch-img-3 { 
-	background-image: url(../3.jpg);
+	background-image: url(../sarthak1.jpg);
 	z-index: 10;
 }
 
@@ -190,4 +194,14 @@
 	-o-transform: translateX(0px) rotate(0deg);
 	-ms-transform: translateX(0px) rotate(0deg);
 	transform: translateX(0px) rotate(0deg);
+}
+
+
+footer li {
+  font-family: 'Mate SC', Arial, sans-serif;
+  /* display: inline-block; */
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
 }
