@@ -8,6 +8,7 @@
     />
     <title>CROTONIA COUNTDOWN</title>
     <link rel="stylesheet" href="/resources/CSS/styles.css" />
+      <!-- <link rel="stylesheet" href="/resources/CSS/themes.css" /> -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap"
@@ -26,26 +27,12 @@
     <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
-      .navigator {
-        /* margin: 10px; */
-        border: 1px solid white;
-        
-        /* display: flex; */
-        /* border-radius: 20px; */
-      }
-      body {
-        background-color:black;
-        
-      }
-
-      .navbar {
-        min-height: 5vh;
-      }
+      
     </style>
   </head>
-  <body>
+  <body class="light">
     <div class="navigator">
-      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+      <nav class="navbar navbar-expand-md  fixed-top">
         <a href="#" class="navbar-brand">
           <img src="/resources/svgs/circle-cropped.svg" height="75" alt="CROTONIA" />
         </a>
@@ -55,7 +42,7 @@
           data-toggle="collapse"
           data-target="#navbarCollapse"
         >
-          <span class="navbar-toggler-icon"></span>
+         <ion-icon name="menu-outline" class="res-drop"></ion-icon>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -82,8 +69,10 @@
               style="font-size: larger"
               >FAQs</a
             >
+           
           </div>
           <div class="navbar-nav ml-auto">
+             <a href="#" class="nav-item nav-link " style="color: #ff0000;" id="toggle">Theme</a>
             <a
               href="#"
               class="nav-item nav-link"
@@ -102,10 +91,10 @@
           id="main"
           data-words=" Coming Soon"
           data-delay="150"
-          data-colors="wheat"
+          data-colors="var(--timer-headline)"
           data-loop="1"
         ></span>
-        <span class="cursor" data-cursorDisplay="!" data-owner="main"></span>
+        <span class="cursor" data-cursorDisplay="!" style="color:var(--cursor-color)" data-owner="main"></span>
       </h1>
       <div id="countdown">
         <ul>
@@ -123,6 +112,7 @@
       <div class="text-center">
         <h4>Connect with us at</h4>
         <ul class="list-unstyled list-inline">
+          <div class="flash">
           <li class="list-inline-item">
             <a
               href="https://www.facebook.com/crotonia"
@@ -154,7 +144,7 @@
             >
               <ion-icon name="logo-youtube" style="color: #ff0000"></ion-icon>
             </a>
-          </li>
+          </li></div>
         </ul>
       </div>
     </footer>
