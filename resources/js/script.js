@@ -37,19 +37,25 @@
     }, 0);
 })();
 
-
-
 // theme toggle
-const body=document.body;
-const toggle=document.getElementById("toggle")
-toggle.onclick=()=>{
-  if (body.classList.contains("light"))
-  {body.classList.remove("light")
-  body.classList.add("dark")}
-  else{
+
+const body = document.body;
+const toggle = document.getElementById("toggle");
+toggle.onclick = () => {
+  if (body.classList.contains("light")) {
+    body.classList.remove("light");
+    body.classList.add("dark");
+    //  document.querySelector("img").setAttribute("filter:invert(0)");
+    // localStorage.setItem("theme", "dark");
+  } else {
     body.classList.remove("dark");
     body.classList.add("light");
+    // document.querySelector("img").setAttribute("filter:invert(1);");
+    // localStorage.setItem("theme", "light");
   }
-  
- }
- 
+};
+
+// const theme = localStorage.getItem("theme");
+// if (theme) {
+//   body.classList.replace(body.classList.entries,theme);
+// }

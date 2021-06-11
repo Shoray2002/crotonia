@@ -12,6 +12,7 @@
   --yellow: #ffee00cb;
   --black:#000000;
   --offwhite:#f8f9fa;
+  
 
  
 }
@@ -24,7 +25,8 @@
     --text: var(--gray6);
     --bg-solar: var(--yellow);
     --timer-headline:wheat;
-    --cursor-color:var(--blue)
+    --cursor-color:var(--blue);
+    --img-fiter:invert(1);
 }
   
 
@@ -35,7 +37,9 @@
     --text: var(--gray0);
     --bg-solar: var(--blue);
     --timer-headline:wheat;
-    --cursor-color:var(--blue)
+    --cursor-color:var(--blue);
+    --img-fiter:invert(0);
+
 }
 
 /* .solar {
@@ -70,9 +74,18 @@
   /* text-align: center; */
 }
 
-.nav-item:hover{
-  color:var(--bg-solar)
+.menubutton{
+  color:var(--bg-solar);
 }
+
+.nav-item:hover{
+  color:var(--bg-solar);
+}
+
+#toggle:hover{
+  color:red
+}
+
 
 @keyframes color-rotate {
   from {
@@ -83,8 +96,8 @@
   }
 }
 img {
-  filter: white;
-  transition: all 0.3s ease-in-out;
+  filter:var(--img-fiter);
+  animation: color-rotate 2s;
 }
 .flash ion-icon:hover {
   animation: color-rotate 1s;
