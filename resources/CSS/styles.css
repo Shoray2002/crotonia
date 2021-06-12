@@ -83,6 +83,7 @@
 .navigator {
   /* margin: 10px; */
   border: 1px solid white;
+  margin-bottom: 7vh;
 
   /* display: flex; */
   /* border-radius: 20px; */
@@ -90,6 +91,7 @@
 
 .navbar {
   min-height: 5vh;
+  
   background: var(--bg-nav);
   color: var(--text);
 }
@@ -118,7 +120,11 @@ body {
   margin: 0;
 }
 
-body {
+
+
+
+body {padding-top: 70px;
+  margin-top: 5vh;
   align-items: center;
   background-color: var(--bg) !important;
   display: flex;
