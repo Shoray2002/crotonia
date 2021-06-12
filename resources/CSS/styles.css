@@ -12,6 +12,7 @@
   --yellow: #ffee00cb;
   --black:#000000;
   --offwhite:#f8f9fa;
+  --opwhite:rgba(255,255,255,.1)
   
 
  
@@ -27,6 +28,8 @@
     --timer-headline:wheat;
     --cursor-color:var(--blue);
     --img-fiter:invert(1);
+    --texture1:#e6e6e6;
+    --texture2:#f7f7f7;
 }
   
 
@@ -39,6 +42,9 @@
     --timer-headline:wheat;
     --cursor-color:var(--blue);
     --img-fiter:invert(0);
+    --texture1:var(--opwhite);
+    --texture2:var(--black);
+
 
 }
 
@@ -129,11 +135,19 @@ body {
 
 body {
   align-items: center;
-  background-color: var(--bg) !important;
+  background-color:var(--bg)  !important;
   display: flex;
   padding-top: 5vh;
   color:var(--text);
-  transition: background 500ms ease-in-out,color 1000ms ease-in-out;
+  
+  background:
+radial-gradient(var(--texture2) 15%, transparent 16%) 0 0,
+radial-gradient(var(--texture2) 15%, transparent 16%) 8px 8px,
+radial-gradient(var(--texture1) 15%, transparent 20%) 0 1px,
+radial-gradient(var(--texture1) 15%, transparent 20%) 8px 9px;
+
+background-size:16px 16px;
+transition: background 500ms ease-in-out,color 1000ms ease-in-out;
   /* background: url(/resources/images/4.png); */
   /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; */
