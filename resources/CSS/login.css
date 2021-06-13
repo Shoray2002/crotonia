@@ -48,8 +48,8 @@ body {
   margin:0;
   padding:0;
   font-family: "Mate SC", Arial, sans-serif;
-/*   
-  background: 
+  background:#dbe1e8;
+  /* background: 
   radial-gradient(var(--texture2) 15%, transparent 16%) 0 0,
     radial-gradient(var(--texture2) 15%, transparent 16%) 8px 8px,
     radial-gradient(var(--texture1) 15%, transparent 20%) 0 1px,
@@ -65,7 +65,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400px;
+  width: 80vh;
   padding: 40px;
   transform: translate(-50%, -50%);
   background: black;
@@ -75,10 +75,15 @@ body {
 }
 
 .login-box h2 {
+  /* text-align: center; */
+  font-size:2rem;
   margin: 0 0 30px;
-  padding: 0;
+  padding: 2vh 0;
   color: goldenrod;
   text-align: center;
+  /* border-bottom: 1px solid white ; */
+  /* width:25vh */
+  
 }
 
 .login-box .user-box {
@@ -107,6 +112,7 @@ body {
   transition: .5s;
 }
 
+
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label {
   top: -20px;
@@ -119,7 +125,7 @@ body {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #03e9f4;
+  color: #dbe1e8;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
@@ -130,14 +136,22 @@ body {
 }
 
 .login-box a:hover {
-  background: #03e9f4;
-  color: #fff;
+  background: #dbe1e8;
+  color: #000;
   border-radius: 5px;
-  box-shadow: 0 0 5px #03e9f4,
-              0 0 25px #03e9f4,
-              0 0 50px #03e9f4,
-              0 0 100px #03e9f4;
+  box-shadow: 0 0 5px #dbe1e8,
+              0 0 25px #dbe1e8,
+              0 0 50px #dbe1e8,
+              0 0 100px #dbe1e8;
 }
+
+.btn{
+  transform: scale(1.3);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .login-box a span {
   position: absolute;
@@ -149,7 +163,7 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, #dbe1e8);
   animation: btn-anim1 1s linear infinite;
 }
 
@@ -167,7 +181,7 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, #dbe1e8);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -186,7 +200,7 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, #dbe1e8);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -205,7 +219,7 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, #dbe1e8);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }
@@ -217,4 +231,16 @@ body {
   50%,100% {
     bottom: 100%;
   }
+}
+
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .login-box {
+width: 40vh;
+}
+  
 }
