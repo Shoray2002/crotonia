@@ -1,3 +1,48 @@
+/* themes */
+:root {
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --blue: #0084a5;
+  --purple: #a82dd1;
+  --yellow: #ffee00cb;
+  --black: #000000;
+  --offwhite: #f8f9fa;
+  --opwhite: rgba(255, 255, 255, 0.1);
+}
+
+.light {
+  --bg: var(--gray0);
+  --bg-nav: var(--black);
+  --nav-text: var(--offwhite);
+  --text: var(--gray6);
+  --bg-solar: var(--yellow);
+  --timer-headline: gold;
+  --cursor-color: var(--blue);
+  --img-fiter: invert(1);
+  --texture1: #e6e6e6;
+  --texture2: #f5f5f5;
+}
+
+.dark {
+  --bg: var(--black);
+  --bg-nav: var(--offwhite);
+  --nav-text: var(--black);
+  --text: var(--gray0);
+  --bg-solar: var(--blue);
+  --timer-headline: wheat;
+  --cursor-color: var(--blue);
+  --img-fiter: invert(0);
+  --texture1: var(--opwhite);
+  --texture2: var(--black);
+}
+
+
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,8 +72,8 @@ body::-webkit-scrollbar-thumb {
   background: rgb(175, 24, 24);
 }
 .main {
-   background:url(/resources/images/4.png);
-   background-attachment: fixed;
+   /* background:url(/resources/images/4.png); */
+   /* background-attachment: fixed; */
   overflow-x: hidden;
 }
 .ch-grid {
